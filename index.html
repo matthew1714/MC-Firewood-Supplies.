@@ -4,51 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="M&C Firewood Supplies - Seasoned firewood delivered across Shropshire, Staffordshire and Cheshire.">
+    <meta name="keywords" content="firewood, logs, kindling, wood delivery, Shropshire, Staffordshire, Cheshire">
+    <meta name="author" content="M&C Firewood Supplies">
     <title>M&C Firewood Supplies</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <img src="logo.png" class="logo">
+        <img src="logo.png" alt="M&C Firewood Supplies Logo" class="logo">
         <h1>M&C Firewood Supplies</h1>
-        <p>Supplying seasoned firewood across Shropshire, Staffordshire & Cheshire</p>
+        <p>Seasoned firewood delivered across Shropshire, Staffordshire & Cheshire</p>
     </header>
 
-    <section class="products">
-        <h2>Our Products</h2>
-        <ul>
-            <li>🔥 Seasoned Hardwood Logs - £95 per load</li>
-            <li>🔥 Kindling - £5 per bag</li>
-            <li>🔥 Log Stores Available on Request</li>
-        </ul>
-    </section>
+    <main>
+        <section class="products">
+            <h2>Shop Firewood</h2>
+            <div class="shop-grid">
+                <div class="product-card">
+                    <h3>Hardwood Logs</h3>
+                    <p>£95 per load</p>
+                    <button onclick="addToCart('Hardwood Logs', 95)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <h3>Kindling</h3>
+                    <p>£5 per bag</p>
+                    <button onclick="addToCart('Kindling', 5)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <h3>Log Store</h3>
+                    <p>£120 each</p>
+                    <button onclick="addToCart('Log Store', 120)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
 
-    <section class="location">
-        <h2>Our Service Area</h2>
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48589.340922031066!2d-2.754034!3d52.707302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487a8d36dfc69d89%3A0xfcb22a08f26e60e4!2sShropshire!5e0!3m2!1sen!2suk!4v1700000000000!5m2!1sen!2suk"
-            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
-    </section>
+        <section class="cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: £<span id="cart-total">0</span></p>
 
-    <section class="contact">
-        <h2>Place an Order / Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Order or Message"></textarea>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-
-    <section class="payment">
-        <h2>Payment</h2>
-        <p>We accept PayPal and Cash on Delivery</p>
-        <button class="pay-btn">Pay Now</button>
-    </section>
+            <h3>Payment Method</h3>
+            <select id="payment-method">
+                <option value="stripe">Stripe</option>
+                <option value="paypal">PayPal</option>
+                <option value="cod">Cash on Delivery</option>
+            </select>
+            <br><br>
+            <button onclick="checkout()">Checkout</button>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2025 M&C Firewood Supplies. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
