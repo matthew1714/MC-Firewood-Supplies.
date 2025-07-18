@@ -2,19 +2,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="M&C Firewood Supplies - Seasoned firewood delivered across Shropshire, Staffordshire and Cheshire.">
-    <meta name="keywords" content="firewood, logs, kindling, wood delivery, Shropshire, Staffordshire, Cheshire">
-    <meta name="author" content="M&C Firewood Supplies">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="M&C Firewood Supplies - Firewood delivered in Shropshire, Staffordshire, and Cheshire." />
+    <meta name="keywords" content="firewood, logs, kindling, delivery, Shropshire, Staffordshire, Cheshire" />
+    <meta name="author" content="M&C Firewood Supplies" />
     <title>M&C Firewood Supplies</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <header>
-        <img src="logo.png" class="logo">
+        <img src="logo.png" alt="M&C Firewood Supplies Logo" class="logo" />
         <h1>M&C Firewood Supplies</h1>
-        <p>Seasoned firewood delivered across Shropshire, Staffordshire & Cheshire</p>
+        <p>Serving Shropshire, Staffordshire & Cheshire</p>
     </header>
 
     <main>
@@ -22,19 +22,24 @@
             <h2>Shop Firewood</h2>
             <div class="shop-grid">
                 <div class="product-card">
-                    <h3>Hardwood Logs</h3>
-                    <p>£95 per load</p>
-                    <button onclick="addToCart('Hardwood Logs', 95)">Add to Cart</button>
+                    <h3>Kiln Dried Hardwood (Builders Bag)</h3>
+                    <p><del>£120</del> <strong>Now £100</strong></p>
+                    <button onclick="addToCart('Kiln Dried Hardwood - Builders Bag', 100)">Add to Cart</button>
                 </div>
                 <div class="product-card">
-                    <h3>Kindling</h3>
-                    <p>£5 per bag</p>
-                    <button onclick="addToCart('Kindling', 5)">Add to Cart</button>
+                    <h3>Hardwood Wonky Logs (Builders Bag)</h3>
+                    <p><del>£90</del> <strong>Now £70</strong></p>
+                    <button onclick="addToCart('Wonky Logs - Builders Bag', 70)">Add to Cart</button>
                 </div>
                 <div class="product-card">
-                    <h3>Log Store</h3>
-                    <p>£120 each</p>
-                    <button onclick="addToCart('Log Store', 120)">Add to Cart</button>
+                    <h3>Kiln Dried Hardwood (Barrow Bag)</h3>
+                    <p><del>£70</del> <strong>Now £50</strong></p>
+                    <button onclick="addToCart('Kiln Dried Hardwood - Barrow Bag', 50)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <h3>Kindling Nets</h3>
+                    <p>£5 each<br><small>Only with Builders/Barrow Bags</small></p>
+                    <button onclick="addToCart('Kindling Nets', 5)">Add to Cart</button>
                 </div>
             </div>
         </section>
@@ -52,6 +57,19 @@
             </select>
             <br><br>
             <button onclick="checkout()">Checkout</button>
+        </section>
+
+        <section class="map">
+            <h2>Our Service Area</h2>
+            <p>We deliver across Shropshire, Staffordshire, and Cheshire</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2404.957104219818!2d-2.489651484202284!3d52.90540447989043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487a9920e032147f%3A0xcbb3f1ea3d3b9c42!2sMarket%20Drayton!5e0!3m2!1sen!2suk!4v1710682530872!5m2!1sen!2suk"
+                width="100%"
+                height="300"
+                style="border:0; border-radius:10px;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
         </section>
     </main>
 

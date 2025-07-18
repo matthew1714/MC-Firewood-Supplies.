@@ -2,6 +2,15 @@
 let cart = [];
 
 function addToCart(name, price) {
+    if (name === 'Kindling Nets') {
+        const hasLogs = cart.some(item =>
+            item.name.includes('Builders Bag') || item.name.includes('Barrow Bag')
+        );
+        if (!hasLogs) {
+            alert('Kindling can only be ordered with a Builders or Barrow Bag.');
+            return;
+        }
+    }
     cart.push({ name, price });
     updateCart();
 }
@@ -11,7 +20,7 @@ function updateCart() {
     const cartTotal = document.getElementById('cart-total');
     cartItems.innerHTML = '';
     let total = 0;
-    cart.forEach((item, index) => {
+    cart.forEach((item) => {
         const li = document.createElement('li');
         li.textContent = `${item.name} - £${item.price}`;
         cartItems.appendChild(li);
