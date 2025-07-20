@@ -1,1 +1,0 @@
-// JavaScript for forms, cart, or payments can go here
