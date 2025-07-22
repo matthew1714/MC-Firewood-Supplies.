@@ -1,1 +1,0 @@
-// JavaScript for form validation and cart behavior
