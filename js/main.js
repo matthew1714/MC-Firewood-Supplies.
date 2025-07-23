@@ -1,0 +1,1 @@
+console.log('M&C Firewood Supplies site loaded');
