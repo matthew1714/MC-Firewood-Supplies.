@@ -1,0 +1,102 @@
+
+/* M&C Firewood Supplies - styles.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+nav {
+  background-color: #333;
+  padding: 0.75rem 2rem;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background: url('../images/firewood-hero.jpg') center/cover no-repeat;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+section {
+  padding: 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.product-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  width: 280px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.product-card h3 {
+  margin-top: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.product-card p {
+  margin: 0.5rem 0;
+}
+
+.price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #b22222;
+}
+
+footer {
+  background-color: #1e1e1e;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
